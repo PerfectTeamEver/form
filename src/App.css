@@ -193,7 +193,7 @@ p {
     font-size: 2rem;
   }
   .block-main {
-    height: auto;
+    height: max-content;
     padding-top: 1rem;
     padding-bottom: 10px;
   }

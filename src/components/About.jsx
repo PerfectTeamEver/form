@@ -55,9 +55,9 @@ function About() {
   };
   return (
     <>
-      <img src={Logo} alt="" className="logo" draggable />
       <LoadingSpinner isLoading={loading} />
       <section className="block-main">
+        <img src={Logo} alt="" className="logo" draggable />
         <h2>
           MATH<span>PRO</span>
         </h2>
@@ -105,7 +105,9 @@ function About() {
             />
             <div className="input-style">
               <IMaskInput
-                mask={"+{998} (00) 000 00 00"}
+                onFocus={() => setPhoneNumber("+998")}
+                overwrite
+                mask={"+998 (00) 000 00 00"}
                 value={phoneNumber}
                 onAccept={(value, mask) => setPhoneNumber(value)}
                 placeholder={`Telefon raqamingizni kiriting...`}
