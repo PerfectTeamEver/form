@@ -21,10 +21,6 @@ function About() {
     setLastName(e.target.value);
   };
 
-  const changeNumber = (e) => {
-    setPhoneNumber(e.target.value);
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!firstName || !phoneNumber || !lastName)
