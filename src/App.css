@@ -32,9 +32,34 @@ p {
 
 .block-main {
   width: 100%;
-  height: 100vh;
+  height: max-content;
   background-color: #f9f9f9;
   padding-top: 2rem;
+  margin-bottom: 50px;
+}
+
+.teacher {
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.teacher_info {
+  width: 65%;
+  text-align: end;
+}
+
+.teacher_info h1 {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.teacher_img img {
+  margin-bottom: 50px;
+
+  max-width: 150px;
+  border-radius: 50%;
+  margin-left: 40px;
 }
 
 .block-main h2 {
@@ -157,6 +182,12 @@ p {
 }
 
 @media (max-width: 782px) {
+  .teacher_img img {
+    max-width: 140px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+
   .block-main h2 {
     font-size: 2.5rem;
   }
@@ -189,6 +220,19 @@ p {
 }
 
 @media (max-width: 500px) {
+  .teacher h1 {
+    font-weight: 600;
+    margin: 0;
+    font-size: large;
+  }
+  .teacher h4 {
+    font-size: medium;
+  }
+  .teacher_img img {
+    max-width: 100px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
   .block-main h2 {
     font-size: 2rem;
   }
@@ -209,5 +253,21 @@ p {
 
   .block-main .text ul li h4 {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 370px) {
+  .teacher h1 {
+    font-weight: 500;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .teacher h4 {
+    font-size: small;
+  }
+  .teacher_img img {
+    max-width: 80px;
+    margin-bottom: 20px;
+    margin-left: 10px;
   }
 }
