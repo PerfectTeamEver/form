@@ -3,7 +3,6 @@ import Inputs from "./Inputs";
 import LoadingSpinner from "./Spinner";
 import { toast } from "react-toastify";
 
-import Logo from "../assets/logo.jpg";
 import { IMaskInput } from "react-imask";
 import { useNavigate } from "react-router-dom";
 import Teacher from "./Teacher";
@@ -59,7 +58,6 @@ function About() {
       <LoadingSpinner isLoading={loading} />
       <section className="block-main">
         <Teacher />
-        <img src={Logo} alt="" className="logo" draggable />
         <h2>
           MATH<span>PRO</span>
         </h2>
