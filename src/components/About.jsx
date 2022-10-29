@@ -43,7 +43,7 @@ function About() {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data?.message) toast.error(data.message);
+        if (!data?.success) toast.error(data.message);
         else {
           toast("Ma'lumotlaringiz muvofaqiyatli jo'natildi");
           navigate("/success");
