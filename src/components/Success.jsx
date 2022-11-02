@@ -5,7 +5,7 @@ const Success = () => {
         <div className="text">
           <h4>
             Arizangiz qabul qilindi. <br />
-            Yaqin fursatlarda operatorimiz siz bilan bog'lanishadi.
+            Yaqin fursatlarda operatorimiz siz bilan bog’lanadi.
           </h4>
 
           <h3>
