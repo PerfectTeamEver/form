@@ -35,6 +35,7 @@ p {
   height: max-content;
   background-color: #f9f9f9;
   padding-top: 2rem;
+  text-align: center;
 }
 
 .teacher {
@@ -84,7 +85,6 @@ p {
   padding-top: 1rem;
   /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
   font-weight: 700;
-  padding-bottom: 1rem;
 }
 
 .block-main .text {
@@ -135,6 +135,7 @@ p {
   padding-top: 10px;
   width: 80%;
   text-align: center;
+  margin: auto;
 }
 
 .input-style input {
@@ -193,7 +194,6 @@ p {
 
   .block-main h3 {
     font-size: 1.5rem;
-    padding-bottom: 0.875rem;
   }
 
   .block-main .text {
@@ -242,7 +242,6 @@ p {
   }
   .block-main h3 {
     font-size: 1.4rem;
-    padding-bottom: 0.875rem;
   }
 
   .block-main .text {

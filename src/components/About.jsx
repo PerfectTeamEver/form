@@ -64,7 +64,8 @@ function About() {
 
         <div className="text">
           <h3>Assalomu Aleykum !</h3>
-          <ul>
+          <h3>Ro’yxatdan o’tishga xush kelibsiz.</h3>
+          {/* <ul>
             <li>
               <div className="number">1</div>
               <h4>
@@ -91,7 +92,7 @@ function About() {
                 <span>cheklangan</span>{" "}
               </h4>
             </li>
-          </ul>
+          </ul> */}
           <form className="form-input" onSubmit={handleSubmit}>
             <Inputs
               placeholder={`Ismingizni kiriting...`}
@@ -114,7 +115,7 @@ function About() {
               />
             </div>
             <div className="btn-box">
-              <button className="btn btn-danger">QABULGA YOZILISH</button>
+              <button className="btn btn-danger">Ro'yxatga yozilish</button>
             </div>
           </form>
         </div>
