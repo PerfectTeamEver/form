@@ -2,10 +2,6 @@ const Success = () => {
   return (
     <div className="success_page">
       <section className="block-main">
-        <h2>
-          MATH<span>PRO</span>
-        </h2>
-
         <div className="text">
           <h4>
             Arizangiz qabul qilindi. <br />
