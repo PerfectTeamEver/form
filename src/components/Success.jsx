@@ -12,7 +12,7 @@ const Success = () => {
             E'TIBORINGIZ UCHUN <br />
             <span className="red">RAHMAT</span>!
           </h3>
-          <h3>Kuningiz Hayrli o'tsin!</h3>
+          <h3> Olimpiadada sizga muvofaqqiyat tilaymiz!</h3>
         </div>
       </section>
     </div>
