@@ -1,9 +1,6 @@
-import Logo from "../assets/logo.jpg";
-
 const Success = () => {
   return (
     <div className="success_page">
-      <img src={Logo} alt="" className="logo" draggable />
       <section className="block-main">
         <h2>
           MATH<span>PRO</span>
