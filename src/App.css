@@ -2,6 +2,9 @@
   font-family: CarterOne;
   src: url(../src/assets/fonts/CarterOne-Regular.ttf);
 }
+body {
+  background-color: #f9f9f9 !important;
+}
 * {
   font-family: CarterOne;
   margin: 0;
@@ -32,8 +35,11 @@ p {
 
 .block-main {
   width: 100%;
-  height: max-content;
-  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   padding-top: 2rem;
   text-align: center;
 }
@@ -236,7 +242,6 @@ p {
     font-size: 2rem;
   }
   .block-main {
-    height: max-content;
     padding-top: 1rem;
     padding-bottom: 10px;
   }
