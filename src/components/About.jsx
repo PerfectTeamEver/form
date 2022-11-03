@@ -5,33 +5,36 @@ import { toast } from "react-toastify";
 
 import { IMaskInput } from "react-imask";
 import { useNavigate } from "react-router-dom";
+import Select from "./Select";
+import { addresses, grades } from "../assets/data/data";
+
 function About() {
   const navigate = useNavigate();
+
   const [loading, setLoading] = useState(false);
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+
   const [phoneNumber, setPhoneNumber] = useState("");
-
-  const changeName = (e) => {
-    setFirstName(e.target.value);
-  };
-
-  const changeLastName = (e) => {
-    setLastName(e.target.value);
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!firstName || !phoneNumber || !lastName)
+    const data = new FormData(e.target);
+    const { ism, familiya, maktab, yashash_joyi, sinf } = Object.fromEntries(
+      data.entries()
+    );
+
+    if (!ism || !familiya || !maktab || !yashash_joyi || !sinf)
       return toast.warning("Iltimos barcha ma'lumotlaringizni kiriting");
     setLoading(true);
-    const full_name = `${firstName} ${lastName}`;
     const phone_number = phoneNumber.replace(/\s/g, "").replace(/[()]/g, "");
 
     await fetch("https://resgistration.herokuapp.com/api/auth/register", {
       method: "POST",
       body: JSON.stringify({
-        full_name,
+        ism,
+        familiya,
+        maktab: Number(maktab),
+        yashash_joyi,
+        sinf: Number(sinf),
         phone_number,
       }),
 
@@ -57,19 +60,28 @@ function About() {
       <LoadingSpinner isLoading={loading} />
       <section className="block-main">
         <div className="text">
+          <h3>Bir million matematik olimpiadasi</h3>
           <h3>Assalomu Aleykum !</h3>
           <h3>Ro’yxatdan o’tish bo’limiga xush kelibsiz</h3>
 
           <form className="form-input" onSubmit={handleSubmit}>
-            <Inputs
-              placeholder={`Ismingizni kiriting...`}
-              values={firstName}
-              onChange={changeName}
+            <Inputs placeholder={`Ismingiz`} name="ism" />
+            <Inputs placeholder={`Familiyangiz`} name="familiya" />
+            <Select
+              placeholder={`Yashash joyingiz`}
+              name="yashash_joyi"
+              options={addresses}
             />
             <Inputs
-              placeholder={`Familiyangizni kiriting...`}
-              values={lastName}
-              onChange={changeLastName}
+              placeholder={`Maktabingiz raqami`}
+              name="maktab"
+              type="number"
+            />
+            <Select
+              name="sinf"
+              placeholder={`Sinfingiz`}
+              options={grades}
+              postFix=" sinf"
             />
             <div className="input-style">
               <IMaskInput

@@ -144,7 +144,8 @@ p {
   margin: auto;
 }
 
-.input-style input {
+.input-style input,
+.input-style select {
   width: 90%;
   padding: 4px 8px;
   outline: none;

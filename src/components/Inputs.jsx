@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-function Inputs({onChange, placeholder, values}) {
-    return(
-        <div className='input-style'>
-            <input type="text" value={values} placeholder={placeholder} onChange={onChange} />
-        </div>
-    )
+function Inputs({ placeholder, ...props }) {
+  return (
+    <div className="input-style">
+      <input type="text" placeholder={placeholder} {...props} />
+    </div>
+  );
 }
 
 export default Inputs;
