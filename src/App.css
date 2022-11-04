@@ -137,6 +137,9 @@ p {
   color: crimson;
 }
 
+.red {
+  color: crimson;
+}
 .block-main .form-input {
   padding-top: 10px;
   width: 80%;

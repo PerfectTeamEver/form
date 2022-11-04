@@ -18,12 +18,21 @@ function About() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = new FormData(e.target);
-    const { ism, familiya, maktab, yashash_joyi, sinf } = Object.fromEntries(
-      data.entries()
+    const myDataObj = Object.fromEntries(data);
+    Object.keys(myDataObj).forEach(
+      (key) => (myDataObj[key] = myDataObj[key].trim())
     );
+
+    const { ism, familiya, maktab, yashash_joyi, sinf } =
+      Object.fromEntries(data);
 
     if (!ism || !familiya || !maktab || !yashash_joyi || !sinf)
       return toast.warning("Iltimos barcha ma'lumotlaringizni kiriting");
+    if (phoneNumber.length !== 19) {
+      setPhoneNumber("");
+      return toast.warning("Nomeringizni to'liq kiriting");
+    }
+
     setLoading(true);
     const phone_number = phoneNumber.replace(/\s/g, "").replace(/[()]/g, "");
 
@@ -60,7 +69,9 @@ function About() {
       <LoadingSpinner isLoading={loading} />
       <section className="block-main">
         <div className="text">
-          <h3>Bir million matematik olimpiadasi</h3>
+          <h2>
+            <strong className="red">Bir Million Matematik olimpiadasi</strong>
+          </h2>
           <h3>Assalomu Aleykum !</h3>
           <h3>Ro’yxatdan o’tish bo’limiga xush kelibsiz</h3>
 
