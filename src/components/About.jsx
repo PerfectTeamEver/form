@@ -101,7 +101,7 @@ function About() {
                 mask={"+998 (00) 000 00 00"}
                 value={phoneNumber}
                 onAccept={(value, mask) => setPhoneNumber(value)}
-                placeholder={`Telefon raqamingizni kiriting...`}
+                placeholder={`Telefon raqamingiz`}
               />
             </div>
             <div className="btn-box">
