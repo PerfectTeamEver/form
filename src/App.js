@@ -1,15 +1,16 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import About from "./components/About";
+// import About from "./components/About";
 import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer } from "react-toastify";
-import Success from "./components/Success";
+// import { ToastContainer } from "react-toastify";
+// import Success from "./components/Success";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      404
+      {/* <BrowserRouter>
         <ToastContainer
           position="top-right"
           autoClose={5000}
@@ -26,7 +27,7 @@ function App() {
           <Route path="/" element={<About />} />
           <Route path="/success" element={<Success />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 }

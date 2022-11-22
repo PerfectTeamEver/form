@@ -3,10 +3,10 @@ import Inputs from "./Inputs";
 import LoadingSpinner from "./Spinner";
 import { toast } from "react-toastify";
 
-import { IMaskInput } from "react-imask";
 import { useNavigate } from "react-router-dom";
 import Select from "./Select";
 import { addresses, grades } from "../assets/data/data";
+import { IMaskInput } from "react-imask";
 
 function About() {
   const navigate = useNavigate();
