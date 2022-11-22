@@ -6,6 +6,10 @@ import "react-toastify/dist/ReactToastify.css";
 // import { ToastContainer } from "react-toastify";
 // import Success from "./components/Success";
 
+// Ushbu kod faqatgina halol yo'lda foydalanish uchun
+// agarda qimor maqsadi yoki qandaydir harom maqsadda foydalanmoqchi bo'lsayiz
+//  oxiratda javobgarligini o'z bo'ynizga olgan bo'lasiz
+
 function App() {
   return (
     <>

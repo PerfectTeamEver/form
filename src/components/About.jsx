@@ -70,10 +70,10 @@ function About() {
       <section className="block-main">
         <div className="text">
           <h2>
-            <strong className="red">Bir Million Matematik olimpiadasi</strong>
+            <strong className="red">-</strong>
           </h2>
-          <h3>Assalomu Aleykum !</h3>
-          <h3>Ro’yxatdan o’tish bo’limiga xush kelibsiz</h3>
+          <h3>-</h3>
+          <h3>-</h3>
 
           <form className="form-input" onSubmit={handleSubmit}>
             <Inputs placeholder={`Ismingiz`} name="ism" />
@@ -105,7 +105,7 @@ function About() {
               />
             </div>
             <div className="btn-box">
-              <button className="btn btn-danger">Ro’yxatdan o’tish</button>
+              <button className="btn btn-danger">-</button>
             </div>
           </form>
         </div>

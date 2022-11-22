@@ -4,15 +4,14 @@ const Success = () => {
       <section className="block-main">
         <div className="text">
           <h4>
-            Arizangiz qabul qilindi. <br />
-            Yaqin fursatlarda operatorimiz siz bilan bog’lanadi.
+            - <br />-
           </h4>
 
           <h3>
-            E'TIBORINGIZ UCHUN <br />
-            <span className="red">RAHMAT</span>!
+            -<br />
+            <span className="red">-</span>!
           </h3>
-          <h3> Olimpiadada sizga muvofaqqiyat tilaymiz!</h3>
+          <h3> -</h3>
         </div>
       </section>
     </div>
