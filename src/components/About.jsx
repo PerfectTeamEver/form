@@ -36,7 +36,7 @@ function About() {
     setLoading(true);
     const phone_number = phoneNumber.replace(/\s/g, "").replace(/[()]/g, "");
 
-    await fetch("https://resgistration.herokuapp.com/api/auth/register", {
+    await fetch("/no-qimor", {
       method: "POST",
       body: JSON.stringify({
         ism,
